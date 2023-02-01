@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-       <header class="page-header">
-            <div class="container">
+<header class="page-header">
+            <div class="container page-header-container">
                 <nav class="main-nav">
                         <a class="logo" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
                     <ul class="page-nav list">
@@ -23,10 +23,62 @@
                             <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="mobile-menu-open"data-menu-open>
+                    <svg class="mobile-menu-open-icon" width="32" height="22" >
+                        <use href="./images/icons.svg#burger-icon"></use>
+                    </svg>
+                </button>
                     <ul class="list auth-nav">
                         <li class="header-contact"><a class="contact-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li class="header-contact"><a class="contact-phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                     </ul>
+            </div>
+
+<!-- --------------------MOBILE-MENU--------------------- -->
+
+            <div class="mobile-menu"data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close-btn"data-menu-close>
+                    <svg class="mobile-menu-close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="">
+                    <li class="header-mobile-item"><a class="link" href="./index.html">Studio</a></li>
+                    <li class="header-mobile-item"><a class="link current" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header-mobile-item"><a class="link" href="">Contacts</a></li>
+                </ul>
+                 <ul class="">
+                    <li class="contact-phone-number-mobile"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="contact-email-mobile"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-soc-list">
+                    <li class="mobile-soc-item">
+                                        <a href="" class="mobile-soc-link link">
+                                            <svg class="mobile-soc-icon" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                    </li>
+                    <li class="mobile-soc-item"><a href="" class="mobile-soc-link link">
+                                        <svg class="mobile-soc-icon" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                    </a></li>
+                    <li class="mobile-soc-item"><a href="" class="mobile-soc-link link">
+                                        <svg class="mobile-soc-icon" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                    </a></li>
+                    <li class="mobile-soc-item"><a href="" class="mobile-soc-link link">
+                                        <svg class="mobile-soc-icon" width="24" height="24">
+                                                <use href="./images/icons.svg#icon-in"></use>
+                                            </svg>
+                                    </a>
+                    </li>
+                </ul>
+                </div>
             </div>
         </header> 
     <main>
@@ -43,7 +95,10 @@
                 <ul class="flex-elements list">
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img1.jpeg" width="360" alt="photo-portfolio1">
+                            <picture>
+                                <source srcset="">
+                            </picture>
+                            <img src="./images/portfolio/mobile/img1mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -56,7 +111,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img2.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img2mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -69,7 +125,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img3.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img3mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -82,7 +139,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img4.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img4mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -95,7 +153,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img5.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img5mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -108,7 +167,8 @@
                     </li>
                      <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img6.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img6mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -121,7 +181,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img7.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img7mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -134,7 +195,8 @@
                     </li>
                     <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img8.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img8mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -147,7 +209,8 @@
                     </li>
                      <li class="item"><a class="flex-elements-link" href="">
                         <div class="product-thumb">
-                            <img src="./images/portfolio/img9.jpeg" width="360" alt="photo-portfolio1">
+
+                            <img src="./images/portfolio/mobile/img9mobile.jpeg" width="396" alt="photo-portfolio1">
                             <div class="product-overlay">
                                 <div class="product-action">
                                     <p class="product-action-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -164,9 +227,9 @@
 
     </main>
 
-      <footer class="footer">
+    <footer class="footer">
         <div class="container footer-wrap">
-            <div>
+            <div class="futer-logo">
                 <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span> <span class="logo-studio-footer">STUDIO</span></a>
                  <p class="footer-text">
                 Increase the flow of customers and sales for your business with digital marketing & growth solutions.
@@ -203,5 +266,6 @@
         </div>   
         
     </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
