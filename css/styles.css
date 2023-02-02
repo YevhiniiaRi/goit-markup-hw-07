@@ -568,6 +568,7 @@ a {
   .hero {
     height: 600px;
     padding-top: 187px;
+    padding-bottom: 187px;
 
   }
   .overlay {
@@ -581,10 +582,7 @@ a {
   .modal-btn {
     margin-top: 48px;
   }
-  section {
-    padding-top: 188px;
-    padding-bottom: 187px;
-  }
+  
 
   .hero-title {
     font-size: 56px;
