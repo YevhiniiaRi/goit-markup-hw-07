@@ -523,7 +523,7 @@ a {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     height: 436px;
     padding-top: 111px;
@@ -568,7 +568,7 @@ a {
   .hero {
     height: 600px;
     padding-top: 187px;
-    
+
   }
   .overlay {
     background-image: linear-gradient(
@@ -583,10 +583,12 @@ a {
   }
   section {
     padding-top: 188px;
+    padding-bottom: 187px;
   }
 
   .hero-title {
-    padding-top: 0;
+    font-size: 56px;
+    max-width: 494px;
   }
 }
 
